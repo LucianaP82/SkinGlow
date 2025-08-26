@@ -8,7 +8,7 @@ function App() {
   }
 
   const sectionStyles = {
-    backgroundColor: "usuario.color",
+    backgroundColor: usuario.color,
     padding: "20px",
     border: "2px solid #f4e114ff",
   }
