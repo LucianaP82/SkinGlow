@@ -7,14 +7,20 @@ function App() {
     color: "#a2409aff",
   }
 
-  function isUserPaymentok () {
+  const sectionStyles = {
+    backgroundColor: "usuario.color",
+    padding: "20px",
+    border: "2px solid #f4e114ff",
+  }
+  function isUserPaymentok() {
     return "No pagaste 🤯"
   }
-       
+  
+
 
   return (
     <>
-      <section style={{ backgroundColor: usuario.color }}>
+      <section style={sectionStyles}>
         <h1>Hola Mundo!</h1>
         <h2>Bienvenido {usuario.name} a la clase, tenés {usuario.age} años</h2>
         
