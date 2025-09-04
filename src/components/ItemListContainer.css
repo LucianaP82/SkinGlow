@@ -1,0 +1,17 @@
+
+    .ItemListContainer-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #FFA985;
+    }
+    .ItemListContainer-greeting {
+        display: flex;
+        justify-content: center;
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+        font-weight: 300;
+        align-self: flex-start;
+        color: #ffffff;
+    }
