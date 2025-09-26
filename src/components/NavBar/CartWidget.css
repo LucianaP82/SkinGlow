@@ -1,7 +1,6 @@
 .cart-widget {
     display: flex;
     align-items: baseline;
-    width: 25%;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
