@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import Item from "./Item";
 import './ItemListContainer.css';
-import getProducts, { getProductsByCategory } from "../../data/mockAPI";
 import { useParams } from "react-router";
+import { getProducts, getProductsByCategory } from "../../data/firebase";
 
 
 
@@ -18,7 +18,7 @@ export default function ItemListContainer({greeting}) {
         }).catch( (error) => alert(`Error ${error}`))
       }
       else {
-      getProductsByCategory(categParam).then( response => setProducts(response))
+      getProductsByCategory(categParam).then( response => setProducts(response)).catch( err => alert(err))
       }
     }, [categParam])
  

@@ -1,15 +1,17 @@
 import { useParams } from "react-router";
 import './ItemDetailContainer.css'
-import { getProductById } from "../../data/mockAPI";
-import { useEffect, useState } from "react";
+import { getProductById } from "../../data/firebase";
+import { useContext, useEffect, useState } from "react";
 import ItemSizePick from "./ItemSizePick";
+import { cartContext } from "../context/cartContext";
 
 
 
 export default function ItemDetailContainer() {
-    const { idParam } = useParams();
     const [product, setProduct] = useState({ loading: true});
-    
+    const { idParam } = useParams();
+    const {addItem} = useContext(cartContext);
+
     useEffect( () => {
       getProductById(idParam)
        .then( response => setProduct(response) )
@@ -36,7 +38,7 @@ export default function ItemDetailContainer() {
                         <ItemSizePick/>
                     </div>   
                 </div>
-                <button className="cart-button">Agregar al carrito</button>
+                <button className="add-to-cart-button" onClick={ () => addItem(product) }>Agregar al carrito</button>
             </div>
         </div>
   )

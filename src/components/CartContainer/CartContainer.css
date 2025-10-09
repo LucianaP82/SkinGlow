@@ -1,0 +1,109 @@
+.cart-empty {
+    background-color: #f3b9a0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+.cart-empty button {
+    background-color: #6B6D76;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.cart-container {
+    background-color: #f3b9a0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cart-background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 1rem;
+    justify-content: center;
+    width: 1000px;
+}
+.cart-background h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #6B6D76;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+}
+.cart-item-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cart-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: center;
+    border-bottom: 1px solid #adafb7;
+    width: 100%;
+}
+.cart-items p {
+    margin: 0.5rem;
+}
+.cart-total {
+    display: flex;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #6B6D76;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+.cart-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    justify-content: center;
+}
+.cart-buttons button {
+    background-color: #6B6D76;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 200px;
+}

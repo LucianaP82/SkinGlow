@@ -1,7 +1,7 @@
 import './Item.css'
 import { Link } from "react-router";
 
-export default function Item({ id,title, img, price, description }) {
+export default function Item({ id,title, img, price }) {
 
   return (
     <div className="item-card">

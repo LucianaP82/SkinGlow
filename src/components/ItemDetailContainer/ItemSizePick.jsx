@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import "./ItemSizePick.css"
 
 export default function ItemSizePick(){
@@ -11,7 +11,7 @@ export default function ItemSizePick(){
         <button className="button-pick" onClick={ () => setSize("50 ml") }>50 ml</button>
       </div>
       <p>Tamaño seleccionado: 
-        <span> {size}</span>
+        <span> {size} </span>
       </p>
     </div>
   )
