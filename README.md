@@ -10,13 +10,13 @@
 <p>El proyecto permite explorar productos, agregarlos al carrito, generar órdenes y guardar los datos del usuario en Firestore, ofreciendo una experiencia de compra completa y fluida.</p>
 
 <p align="center">
-  <a href="#tecnologías-utilizadas">Tecnologías utilizadas</a> •
+  <a href="#tecnologías-utilizadas">Tecnologías Utilizadas</a> •
   <a href="#instalación">Instalación</a> •
   <a href="#estructura-del-proyecto">Estructura del Proyecto</a> •
   <a href="#funciones-principales">Funciones Principales</a> •
   <a href="#scripts-disponibles">Scripts Disponibles</a> •
-  <a href="#créditos">Créditos</a>
-  <a href="#agradecimientos">Agradecimientos</a>
+  <a href="#créditos">Créditos</a> •
+  <a href="#agradecimientos">Agradecimientos</a> •
   <a href="#repositorio">Repositorio</a>
 </p>
 
