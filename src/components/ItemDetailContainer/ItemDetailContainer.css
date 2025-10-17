@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 650px;
 }
 .item-detail-container {
     display: flex;
@@ -12,9 +13,9 @@
     border-radius: 0.5rem;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin: 1rem;
+    margin-top: 3rem;
     width: 800px;
-    height: 500px;
+    height: 550px;
 }
 .item-detail-title {
     font-size: 2rem;
@@ -78,4 +79,14 @@
     cursor: pointer;
     border-radius: 5px;
     width: 50%;
+}
+.item-detail-return {
+    color: #47484d;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: underline;
+    margin-top: none;
+    margin-bottom: none;
+    width: 100%;
 }

@@ -1,9 +1,9 @@
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import './ItemDetailContainer.css'
 import { getProductById } from "../../data/firebase";
 import { useContext, useEffect, useState } from "react";
-import ItemSizePick from "./ItemSizePick";
-import { cartContext } from "../context/cartContext";
+import { cartContext } from "../../context/cartContext";
+
 
 
 
@@ -35,10 +35,12 @@ export default function ItemDetailContainer() {
                     <div className="item-detail-description-container">
                         <p className="item-detail-description">{product.description}</p>
                         <p className="item-detail-price">Precio: $ {product.price.toFixed(2)} </p>
-                        <ItemSizePick/>
                     </div>   
                 </div>
                 <button className="add-to-cart-button" onClick={ () => addItem(product) }>Agregar al carrito</button>
+                <Link to="/">
+                <h3 className="item-detail-return">Ir al Inicio</h3>
+                </Link>
             </div>
         </div>
   )

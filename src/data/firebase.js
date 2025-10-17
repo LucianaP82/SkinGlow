@@ -3,7 +3,14 @@ import { initializeApp } from "firebase/app";
 import { addDoc, collection, doc, getDoc, getDocs, getFirestore, query, where } from "firebase/firestore";
 import products from "./products";
 
-const firebaseConfig = { };
+const firebaseConfig = { 
+  apiKey: "AIzaSyBYPmXWtrK-ZveBh0-Onn2axxfWrzVNTgo",
+  authDomain: "react-skinglow.firebaseapp.com",
+  projectId: "react-skinglow",
+  storageBucket: "react-skinglow.firebasestorage.app",
+  messagingSenderId: "938716498447",
+  appId: "1:938716498447:web:f7c273a99e1b280767317a"
+};
 
 const app = initializeApp(firebaseConfig);
 

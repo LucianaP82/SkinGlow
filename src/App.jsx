@@ -4,7 +4,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import { BrowserRouter, Routes, Route } from 'react-router';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import NotFound from './components/NotFund';
-import { CartProvider } from './components/context/cartContext';
+import { CartProvider } from './context/cartContext';
 import CartContainer from './components/CartContainer/CartContainer';
 import { subirProductosAFirestore } from './data/firebase';
 

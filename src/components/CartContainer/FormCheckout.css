@@ -1,0 +1,86 @@
+.form-checkout-title{
+    font-size: 2rem;
+    color: #6B6D76;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+}
+.form-checkout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    width: 400px;
+}
+
+.form-checkout label{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.form-checkout label span {
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  width: 120px;
+  text-align: left;
+  margin-right: 1rem;
+}
+
+.form-checkout label input{
+    padding: 0.5rem 2rem 0.5rem 0.5rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    width: 200px;
+}
+
+.form-checkout label input:focus{
+    outline: none;
+    border-color: #6b6d76;
+}
+
+.form-buttons-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    gap: 1rem;
+}
+.form-buttons-container button{
+    background-color: #6B6D76;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+} 
+input:-webkit-autofill {
+  background-color: #fff !important;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+  box-shadow: 0 0 0px 1000px #fff inset !important;
+  -webkit-text-fill-color: #000 !important; 
+  transition: background-color 5000s ease-in-out 0s;
+}
+.form-checkout input:valid {
+  border-color: #00ff33;
+  background-color: #fff; 
+}
+
+.form-checkout input:invalid {
+  border-color: #868282;
+  background-color: #fff;
+}
