@@ -55,7 +55,7 @@ $ npm start
 ```
 
 > **Nota**
-> Si está utilizando Linux Bash para Windows[ver esta guía](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) o utilizar `node` desde el símbolo del sistema.
+> Si está utilizando Linux Bash para Windows [ver esta guía](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) o utilizar `node` desde el símbolo del sistema.
 
 
 
@@ -106,7 +106,7 @@ MIT
 
 ## Agradecimientos
 
-Este proyecto fue desarrollado como **proyecto final del curso de React de Coderhouse**.  
+Este proyecto fue desarrollado como **proyecto final del curso de React de [Coderhouse](https://coderhouse.com) **.  
 Gracias al profe  por el acompañamiento durante el proceso de aprendizaje y desarrollo de **SkinGlow**.  
 
 ---
