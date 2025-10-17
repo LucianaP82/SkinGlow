@@ -106,7 +106,7 @@ MIT
 
 ## Agradecimientos
 
-Este proyecto fue desarrollado como **proyecto final del curso de React de [Coderhouse](https://coderhouse.com) **.  
+Este proyecto fue desarrollado como **proyecto final del curso de React de [Coderhouse](https://coderhouse.com)** .
 Gracias al profe  por el acompañamiento durante el proceso de aprendizaje y desarrollo de **SkinGlow**.  
 
 ---
