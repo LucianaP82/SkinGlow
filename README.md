@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./imgs/skinglow-logo.jpg" alt="Logo SkinGlow" width="160"/>
+  <img src="./public/imgs/skinglow-logo.jpg" alt="Logo SkinGlow" width="160"/>
 </p>
 
 # 💖 SkinGlow
@@ -94,7 +94,7 @@ El proyecto permite explorar productos, agregarlos al carrito, generar órdenes 
 ## ✨ Vista previa
 
 <p align="center">
-  <img src="./imgs/skinglow-captura.jpg" alt="Vista previa de SkinGlow" width="600"/>
+  <img src="./public/imgs/skinglow-captura.jpg" alt="Vista previa de SkinGlow" width="600"/>
 </p>
 
 ---
