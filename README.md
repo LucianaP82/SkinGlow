@@ -11,11 +11,11 @@
 
 <p align="center">
   <a href="#tecnologías-utilizadas">Tecnologías utilizadas</a> •
-  <a href="#instalacion">Instalación</a> •
+  <a href="#instalación">Instalación</a> •
   <a href="#estructura-del-proyecto">Estructura del Proyecto</a> •
   <a href="#funciones-principales">Funciones Principales</a> •
   <a href="#scripts-disponibles">Scripts Disponibles</a> •
-  <a href="#creditos">Créditos</a>
+  <a href="#créditos">Créditos</a>
   <a href="#agradecimientos">Agradecimientos</a>
   <a href="#repositorio">Repositorio</a>
 </p>
