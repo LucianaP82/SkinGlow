@@ -5,9 +5,9 @@
   </p>
  
 
-<h4 align="center">**SkinGlow** es un ecommerce de productos de **skincare** desarrollado en <a href="http://https://es.react.dev/" target="_blank">**React**</a>.</h4>
+<h4 align="center">SkinGlow es un e-commerce de productos de skincare desarrollado en <a href="http://https://es.react.dev/" target="_blank">React</a>.</h4>
 <hr>
-<p>El proyecto permite explorar productos, agregarlos al carrito, generar órdenes y guardar los datos del usuario en **Firestore**, ofreciendo una experiencia de compra completa y fluida.</p>
+<p>El proyecto permite explorar productos, agregarlos al carrito, generar órdenes y guardar los datos del usuario en Firestore, ofreciendo una experiencia de compra completa y fluida.</p>
 
 <p align="center">
   <a href="#tecnologias-utilizadas">Tecnologías utilizadas</a> •
@@ -16,12 +16,12 @@
   <a href="#funciones-principales">Funciones Principales</a> •
   <a href="#scripts-disponibles">Scripts Disponibles</a> •
   <a href="#creditos">Créditos</a>
-  <a href="#vista-previa">Vista Previa</a>
   <a href="#agradecimientos">Agradecimientos</a>
   <a href="#repositorio">Repositorio</a>
 </p>
 
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
+<p align="center">
+  <img src="./public/imgs/skinglow-captura.jpg" alt="Vista previa de SkinGlow" width="600"/>
 
 ## Tecnologías utilizadas
 
@@ -97,29 +97,21 @@ $ npm start
 **LucianaP82**  
 🔗 [GitHub: LucianaP82](https://github.com/LucianaP82)
 
-## Vista previa
 
-<p align="center">
-  <img src="./public/imgs/skinglow-captura.jpg" alt="Vista previa de SkinGlow" width="600"/>
-</p>
 
-## You may also like...
-
-- [Pomolectron](https://github.com/amitmerchant1990/pomolectron) - A pomodoro app
-- [Correo](https://github.com/amitmerchant1990/correo) - A menubar/taskbar Gmail App for Windows and macOS
 
 ## Licencia
 
 MIT
 
-## 🙌 Agradecimientos
+## Agradecimientos
 
 Este proyecto fue desarrollado como **proyecto final del curso de React de Coderhouse**.  
 Gracias al profe  por el acompañamiento durante el proceso de aprendizaje y desarrollo de **SkinGlow**.  
 
 ---
 
-## 🌐 Repositorio
+## Repositorio
 
 👉 [https://github.com/LucianaP82/SkinGlow.git](https://github.com/LucianaP82/SkinGlow.git)
 ---
