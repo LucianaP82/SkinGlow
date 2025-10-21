@@ -7,20 +7,20 @@ export function CartProvider( { children }){
 
   const [cartItems, setCartItems] = useState([]);
 
-  function addItem(newItem) {
-    const quantityCount = 1;
+  function addItem(newItem, quantityCount) {
+    
     const newCart = structuredClone(cartItems)
     const isInCart = cartItems.some(item => item.id === newItem.id)
 
     if (isInCart) {
       const index = cartItems.findIndex(item => item.id === newItem.id)
       newCart[index].quantity += quantityCount
-      toast.success("Agregaste otra unidad al carrito");
+      toast.success(`Agregaste más unidades al carrito`);
     }
     else {
       newItem.quantity = quantityCount
       newCart.push(newItem)
-      toast.success("Producto agregado al carrito");
+      toast.success(`Agregaste ${quantityCount} unidad(es) al carrito`);
     }
     setCartItems(newCart)
   }
@@ -33,7 +33,7 @@ export function CartProvider( { children }){
 
   function countTotalPrice() {
     let totalPrice = 0;
-    cartItems.forEach(item => totalPrice += item.quantity * item.price)
+    cartItems.forEach(item => totalPrice += item.price * item.quantity)
     return totalPrice;
   }
 

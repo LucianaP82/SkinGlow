@@ -58,8 +58,12 @@ export default function CartContainer(){
           </div>
           <h3 className="cart-total">Total a pagar: $ {countTotalPrice().toFixed(2)}</h3>
         </div>
-
-        <button className="button-clear" onClick={ () => clearCart() }>Vaciar carrito</button>
+        <div className="cart-final-buttons">
+        <button onClick={ () => clearCart() }>Vaciar carrito</button>
+        <Link to="/">
+          <button>Ir al inicio</button>
+        </Link>
+        </div>
         <FormCheckout handleCheckout={ handleCheckout } />  
     </section>
   )

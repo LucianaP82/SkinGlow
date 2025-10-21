@@ -4,12 +4,12 @@ import { addDoc, collection, doc, getDoc, getDocs, getFirestore, query, where } 
 import products from "./products";
 
 const firebaseConfig = { 
-  apiKey: "AIzaSyBYPmXWtrK-ZveBh0-Onn2axxfWrzVNTgo",
-  authDomain: "react-skinglow.firebaseapp.com",
-  projectId: "react-skinglow",
-  storageBucket: "react-skinglow.firebasestorage.app",
+  apiKey: import.meta.env.VITE_FIRESTORE_APIKEY,
+  authDomain: import.meta.env.VITE_FIRESTORE_AUTHDOMAIN,
+  projectId: import.meta.env.VITE_FIRESTORE_PROJECTID,
+  storageBucket: import.meta.env.VITE_FIRESTORE_BUCKET,
   messagingSenderId: "938716498447",
-  appId: "1:938716498447:web:f7c273a99e1b280767317a"
+  appId: import.meta.env.VITE_FIRESTORE_APPID
 };
 
 const app = initializeApp(firebaseConfig);
@@ -34,8 +34,12 @@ export async function getProductById(idParam){
   
   const docRef = doc(db, "products", idParam)
   const documentSnapshot = await getDoc(docRef);
-  return { id: documentSnapshot.id, ...documentSnapshot.data()}  
-}
+
+  if (documentSnapshot.exists()){
+    return { id: documentSnapshot.id, ...documentSnapshot.data()} 
+  }
+   throw( new Error("No encontramos ningùn resultado"));   
+} 
 
 export async function getProductsByCategory(categParam){
    const productsRef = collection(db, "products");

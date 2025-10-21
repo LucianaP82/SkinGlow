@@ -3,28 +3,42 @@ import './ItemDetailContainer.css'
 import { getProductById } from "../../data/firebase";
 import { useContext, useEffect, useState } from "react";
 import { cartContext } from "../../context/cartContext";
-
+import ItemCount  from "./ItemCount";
 
 
 
 export default function ItemDetailContainer() {
-    const [product, setProduct] = useState({ loading: true});
+    const [product, setProduct] = useState(null);
+    const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState(null);
     const { idParam } = useParams();
     const {addItem} = useContext(cartContext);
 
     useEffect( () => {
+        setIsLoading(true);
+        setError(null);
+    
       getProductById(idParam)
        .then( response => setProduct(response) )
-       .catch( error => Swal.fire({
-                            icon: "error",
-                            title: "Oops...",
-                            text: error,
-                        }))
-    }, [])
+       .catch( error => {
+            setError(error.message);
+            console.error(error);})
+       .finally( () => setIsLoading(false));
+    }, [idParam])
     
-    if (product.loading){
+    function handleAddToCart (count) {
+      addItem(product, count)
+    }
+
+
+    if (isLoading){
       return <h2>Cargando...</h2>
     }
+
+    if (error){
+      return <h2>Error: {error}</h2>
+    } 
+ 
 
     return (
         <div className="detail-container">
@@ -35,9 +49,10 @@ export default function ItemDetailContainer() {
                     <div className="item-detail-description-container">
                         <p className="item-detail-description">{product.description}</p>
                         <p className="item-detail-price">Precio: $ {product.price.toFixed(2)} </p>
+                        <ItemCount max={product.stock} min={1} onAddToCart={handleAddToCart} />
                     </div>   
                 </div>
-                <button className="add-to-cart-button" onClick={ () => addItem(product) }>Agregar al carrito</button>
+                
                 <Link to="/">
                 <h3 className="item-detail-return">Ir al Inicio</h3>
                 </Link>

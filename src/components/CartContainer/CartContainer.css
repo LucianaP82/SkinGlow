@@ -82,8 +82,15 @@
     width: 100%;
     justify-content: center;
 }
-
-.button-clear {
+.cart-final-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cart-final-buttons button {
     background-color: #6B6D76;
     border: none;
     color: white;

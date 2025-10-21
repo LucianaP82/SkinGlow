@@ -31,6 +31,8 @@
 * 💬 SweetAlert2
 * 🔔 React Hot Toast
 * 💅 CSS3
+* 🧱 Vite 
+* 📦 Node.js + npm
 
 
 ## Instalación
