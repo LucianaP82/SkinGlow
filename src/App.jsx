@@ -6,7 +6,7 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import NotFound from './components/NotFund';
 import { CartProvider } from './context/cartContext';
 import CartContainer from './components/CartContainer/CartContainer';
-import { subirProductosAFirestore } from './data/firebase';
+
 
 
 export default function App() {
